@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
 
             if  (year < birthYear || (year == birthYear && month < birthMonth) || (year == birthYear && month == birthMonth && day < birthDay)){
                 Log.d("msg", "msg")
+                ageText.text = ""
                 Toast.makeText(this, "Invalid Birthdate, Try again", Toast.LENGTH_LONG).show()
             }else{
                 var ageYear = year - birthYear
